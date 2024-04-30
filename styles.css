@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ :root {
+
+    /****** Colors *******/
+    /* Primary */
+ 
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+ 
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    /****** Fonts *******/
+    --ff-Primary: "Young Serif", serif;
+    --ff-body:  "Outfit", sans-serif; 
+    --fw-reg:  300;
+    --fw-med: 600;
+    --fw-dark: 700;
+ }
+ 
+
+html {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-reg);
+    color: var(--WengeBrown);
+}
+
+body {
+    margin: 0;
+    background-color: var(--Eggshell);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+   font-family: var(--ff-Primary);
+   font-weight: var(--fw-reg);
+   line-height: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color:  var(--Nutmeg);
+    margin-block: 2rem;
+}
+
+h3 {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-med);
+    color: var(--DarkRaspberry);
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    width: 737px;
+    margin-inline: auto;
+    margin-block: 5rem;
+    background-color: var(--White);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+
+.Recipe_img {
+    border-radius: .75rem;
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+        background-color: var(--White);
+    }
+    main {
+        width: 100%;
+        margin: 0 0 5rem 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .Recipe_img {
+        border-radius: 0;
+    }
+
+    .wrapper {
+        width: 85%;
+        margin-inline: auto;
+    }
+}
+
+.card {
+    background-color: #fff7fc;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+ol li, ul li{
+    margin-left: -1rem;
+    margin-bottom: .25rem;
+    padding-left: 1.5rem;
+
+}
+
+ol li span, ul li span {
+    font-weight: var(--fw-med);
+}
+
+li::marker {
+    color: var(--DarkRaspberry);
+    font-family: "Outfit", sans-serif;
+}
+
+hr {
+    border-top: .5px;
+    color: var(--LightGrey);
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+}
+table td {
+    border-bottom: .5px solid var(--LightGrey);
+    padding: 1rem;
+}
+
+table td:first-child {
+    padding-left: 2rem;
+}
+
+table td:last-child {
+    font-weight: var(--fw-dark);
+    color:  var(--Nutmeg);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
